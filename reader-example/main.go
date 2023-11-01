@@ -22,8 +22,9 @@ func (m *MySlowReader) Read(p []byte) (int, error) {
 
 func main() {
 	myReaderInstance := &MySlowReader{
-		contents: "a",
+		contents: "aYam ikf",
 	}
+	
 	out, err := io.ReadAll(myReaderInstance)
 	if err != nil {
 		log.Fatal(err)
